@@ -1,0 +1,88 @@
+body{
+  background-color: black;
+}
+nav{
+  z-index: 1;
+  top: 0;
+  position: fixed;
+  background-color: black;
+  height: 20vh;
+  width: 100%;
+}
+.buffer{
+  height: 20vh;
+  background-color: black;
+}
+.buffer2{
+  height: 30vh;
+  background-color: black;
+}
+.white{
+  color: white;
+}
+.onstage{
+  width: 100%;
+}
+.title{
+  display: inline-block;
+  font-size: 50px;
+  color: white;
+  margin-top: 8vh;
+  float: right;
+  font-family: 'Nosifer', cursive;
+  margin-right: 2%;
+}
+.logo{
+  display: inline;
+  width: 10%;
+}
+.navOptions{
+  display: inline-block;
+  margin-top: 12vh;
+  font-family: 'Nosifer', cursive;
+  color: white;
+  margin-left: 2%;
+  font-size: 20px;
+  outline: none;
+}
+.navOptions:hover{
+  color: #bcb8b8;
+  cursor: pointer;
+}
+.screen{
+  margin-top: 0;
+  background-color: black;
+  height: 100vh
+}
+#scheduleContainer{
+  color: #ff6100;
+  background-color: #bcb8b8;
+  width: 90vw;
+  height: 80vh;
+  margin: auto;
+  border: 2px solid #f48642;
+  border-radius: 30px;
+}
+#shows{
+  overflow-y: hidden;
+}
+.clownPhoto{
+  height: 65vh;
+  margin-left: 2%;
+}
+.aboutText{
+  padding: 15px;
+  color: white;
+}
+.fixTop{
+  margin-top: -10vh;
+}
+
+@media only screen and (max-device-width: 480px) {
+nav{
+  position: relative;
+}
+.title{
+  display: none;
+}
+}

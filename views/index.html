@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Omega Nemesis </title>
+    <meta name="description" content="Omega Nemesis Shows, About, and Band Contact">
+      <link id="favicon" rel="icon" href="https://scontent-dft4-3.xx.fbcdn.net/v/t1.0-1/c2.0.320.320/p320x320/11329921_921379911217891_8472838618740884602_n.jpg?oh=53ff03e0fff77da9988f0f9538407789&oe=5AC89B6F" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title></title>
+  </head>
+  <body>
+    <nav>
+    <h4 onclick="move('shows')" class = "navOptions">
+      Shows
+    </h4>
+    <h4 onclick = "move('about')" class = "navOptions">
+      About
+      </h4>
+      <h4 class = "navOptions">
+        Members
+      </h4>
+      <h4 class = "navOptions">
+        Contact
+      </h4>
+      <h1 class = "title">
+        Omega Nemesis
+      </h1>
+    </nav>
+    <!-- Homepage Image -->
+    <img class="onstage" src="https://scontent-dft4-3.xx.fbcdn.net/v/t1.0-9/11165220_904260272929855_1834719654636629803_n.jpg?oh=ee865f986774df44c4e2bae771baf6bb&oe=5AD73C91">
+
+    <!-- Show Schedule: Band will be able to add with add interface-->
+    <div id = "shows" class = "buffer">
+    </div>
+  <div class="screen">
+    <div id = "scheduleContainer">
+      <center>
+      <h1>
+        Upcoming Shows
+      </h1>
+      <hr style="background-color: black">
+      <!-- EJS forEach function to load shows -->
+      <div id = "shows">
+      </div>
+    </center>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div id="about" class = "buffer2">
+  </div>
+  <div class = "screen fixTop">
+    <center>
+      <h1 class = "white">About</h1>
+        </center>
+        <div class = "rows">
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-4">
+      <img class = "clownPhoto" src = "https://scontent-dft4-3.xx.fbcdn.net/v/t1.0-9/21271206_1544262072263002_1500717186612457845_n.jpg?oh=01a80cbebff01f36d731e9845cb4f88f&oe=5A9D63EC">
+          </div>
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-4">
+        <h4 class="aboutText">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus facilisis nisi quis tempus. Duis vehicula lacinia lacus quis pulvinar. Quisque a tortor orci. Duis venenatis facilisis orci, sit amet sodales enim porttitor at. Morbi condimentum viverra lacus, eget luctus orci finibus imperdiet. Nunc venenatis sed justo quis pellentesque. Donec felis est, fringilla vitae bibendum et, tempus a quam. Pellentesque nisi leo, egestas sit amet feugiat interdum, tempor pretium odio. Nulla sed tellus purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris purus purus, lacinia ut placerat in, maximus a tortor. Suspendisse cursus lorem vel est bibendum bibendum. Donec scelerisque auctor aliquet. Nam eget porta quam, efficitur vestibulum metus. Duis fermentum metus vitae arcu accumsan, et finibus felis euismod.
+  </h4>
+    </div>
+  <div class="col-md-1">
+  </div>
+    </div>
+  </div>
+
+  <script src = "client.js"></script>
+  </body>
+</html>
