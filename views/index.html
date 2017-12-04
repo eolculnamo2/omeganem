@@ -8,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <title></title>
+   	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
     <nav>
@@ -19,18 +20,18 @@
     <h4 onclick = "move('about')" class = "navOptions">
       About
       </h4>
-      <h4 class = "navOptions">
+      <h4 onclick = "move('members')" class = "navOptions">
         Members
       </h4>
-      <h4 class = "navOptions">
+      <h4 onclick = "move('contact')" class = "navOptions">
         Contact
       </h4>
-      <h1 class = "title">
+      <h1 onclick="move('onstage')" class = "title">
         Omega Nemesis
       </h1>
     </nav>
     <!-- Homepage Image -->
-    <img class="onstage" src="https://scontent-dft4-3.xx.fbcdn.net/v/t1.0-9/11165220_904260272929855_1834719654636629803_n.jpg?oh=ee865f986774df44c4e2bae771baf6bb&oe=5AD73C91">
+    <img id = "onstage" class="onstage" src="https://scontent-dft4-3.xx.fbcdn.net/v/t1.0-9/11165220_904260272929855_1834719654636629803_n.jpg?oh=ee865f986774df44c4e2bae771baf6bb&oe=5AD73C91">
 
     <!-- Show Schedule: Band will be able to add with add interface-->
     <div id = "shows" class = "buffer">
@@ -41,9 +42,10 @@
       <h1>
         Upcoming Shows
       </h1>
-      <hr style="background-color: black">
+     <div id ="line">
+        </div>
       <!-- EJS forEach function to load shows -->
-      <div id = "shows">
+      <div id = "showList">
       </div>
     </center>
     </div>
@@ -74,6 +76,62 @@
     </div>
   </div>
 
+  <!-- Begin Members -->
+
+  <div id = "members" class = "buffer">
+    </div>
+    <div class = "screen">
+<div id = "profiles">
+    <div class = "memberProfile">
+
+    <h1 class = "memberName">
+      Jim
+    </h1><br>
+    <img class = "memberImage" src = "https://scontent-dft4-3.xx.fbcdn.net/v/t1.0-9/14224944_1184220781600468_1420724018669356970_n.jpg?oh=c161cff0a3eceebf1546cab289bced8d&oe=5AD25EE9">
+  </div>
+
+  <div class="memberProfile">
+      <h1 class = "memberName">
+        Mandy
+      </h1>
+<br>
+  <img class = "memberImage" src = "https://scontent-dft4-3.xx.fbcdn.net/v/t1.0-9/14068182_1178504032172143_5222852234584630777_n.jpg?oh=765c70203db67408de6ac020d4c1a9b5&oe=5ACCB836">
+</div>
+
+<div class="memberProfile">
+    <h1 class = "memberName">
+      Lonnie
+    </h1>
+<br>
+<img class = "memberImage" src = "https://scontent-dft4-3.xx.fbcdn.net/v/t1.0-9/1380697_10202097010210666_1899436028_n.jpg?oh=30714c68ba8f5cb992a1ca88fc00228b&oe=5AD60B16">
+</div>
+</div>
+  </div>
+
+<!---Start Contact -->
+<div id = "contact" class = "buffer2">
+  </div>
+<div class = "screen fixTop">
+  <center>
+  <h1 style = "color: white">
+    Contact Us
+  </h1>
+  <br>
+
+  <input placeholder="Your Name" name ="name">
+  <br><br>
+  <input placeholder="Phone Number" name = "number">
+<br><br>
+  <input placeholder="Email Address"name ="email">
+<br><br>
+  <textarea placeholder="Details/Comments" name = "details">
+    Details/Comments
+  </textarea><br>
+  <button type = "submit">
+    Submit
+  </button>
+</center>
+</div>
   <script src = "client.js"></script>
   </body>
 </html>
