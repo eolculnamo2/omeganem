@@ -1,14 +1,6 @@
 var React = require('react');
-
+var Schedule = require('./schedule.jsx')
 //Schedule Editor and About Editor Components Nested in Dashboard for Changes to site by Band Members
-
-var Schedule = React.createClass({
-  render: function(){
-    <form method = "POST" action = "/addEvents">
-      <input/> 
-    </form>
-  }
-})
 
 var Dashboard = React.createClass({
   dashboard: function(){
@@ -16,9 +8,9 @@ var Dashboard = React.createClass({
     <div>
         <a href = "/logout">Logout</a>
       <h1>
-        Welcome: {userOnline}
+        Welcome {userOnline}
         </h1> 
-      
+      <Schedule/>
       </div>)
   },
   render: function(){

@@ -11,6 +11,6 @@ var user = new Schema ({
   password: String
 })
 user.plugin(passportLocalMongoose);
-var Account = mongoose.model("omeganemesis", user)
+var Account = mongoose.model("omeganemesis", user,"omeganemeses")
 
 module.exports = Account;
