@@ -68,7 +68,7 @@ textarea{
 .screen{
   margin-top: 0;
   background-color: black;
-  height: 100vh
+  min-height: 100vh
 }
 #scheduleContainer{
   color: #ff6100;
@@ -124,6 +124,31 @@ textarea{
   border-radius: 20px;
 }
 @media only screen and (max-device-width: 480px) {
+  
+  .about{
+    font-size: 100px;
+  }
+  .aboutText{
+    font-size: 40px;
+  }
+  .clownPhoto{
+width: 90%;
+    min-height: 40vh;
+    margin:auto;
+   
+  }
+  .navOptions{
+    font-size: 35px;
+  }
+  .memberImage{
+    width: 70vw;
+    max-width:90vw;
+    max-height: 70vh;
+ 
+  }
+  .screen{
+    min-height: 60vh;
+  }
 nav{
   position: relative;
 }
