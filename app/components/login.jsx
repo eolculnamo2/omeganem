@@ -14,9 +14,9 @@ var LoginPage = React.createClass({
         Registration
         </h1>
     <form method = "POST" action = "/register">
-      <input placeholder = "username" name = "username" />
-      <input placeholder = "password" name = "password" type = "password"/>
-      <input placeholder = "confirm password" name = "confirmPassword" type = "password"/><br/>
+      <input className = "input1" placeholder = "username" name = "username" />
+      <input className = "input1" placeholder = "password" name = "password" type = "password"/>
+      <input className = "input1"  placeholder = "confirm password" name = "confirmPassword" type = "password"/><br/>
       <button type = "submit">
         Register
       </button>
@@ -34,8 +34,8 @@ var LoginPage = React.createClass({
         Admin Login
         </h1>
       <form method = "POST" action = "login">
-        <input placeholder = "username" name = "username" /><br/>
-        <input placeholder = "password" name = "password" type = "password"/>
+        <input className = "input1" placeholder = "username" name = "username" /><br/>
+        <input className = "input1"  placeholder = "password" name = "password" type = "password"/>
         <br/>
         <button type = "submit">
         Login
