@@ -8,15 +8,20 @@ var LoginPage = React.createClass({
     this.state.display === "login" ? this.setState({display: "register"}) : this.setState({display: "login"})
   },
   register: function(){
+    var test = prompt("Please Enter Band Key to Register")
+    if(test !== "fa4ofFEFno23of32fOnon"){
+    this.setState({display: "login"});
+    }
     return(
     <div>
     <h1>
         Registration
         </h1>
     <form method = "POST" action = "/register">
-      <input className = "input1" placeholder = "username" name = "username" />
-      <input className = "input1" placeholder = "password" name = "password" type = "password"/>
-      <input className = "input1"  placeholder = "confirm password" name = "confirmPassword" type = "password"/><br/>
+      <input className = "input1" placeholder = "Username" name = "username" />
+      <input className = "input1" placeholder = "Password" name = "password" type = "password"/>
+      <input className = "input1"  placeholder = "Confirm Password" name = "confirmPassword" type = "password"/>
+      <br/>
       <button type = "submit">
         Register
       </button>

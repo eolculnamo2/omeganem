@@ -2922,6 +2922,16 @@ module.exports = DOMLazyTree;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+module.exports = __webpack_require__(16);
+
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2932,7 +2942,7 @@ module.exports = DOMLazyTree;
 
 
 
-var EventPluginHub = __webpack_require__(21);
+var EventPluginHub = __webpack_require__(22);
 var EventPluginUtils = __webpack_require__(34);
 
 var accumulateInto = __webpack_require__(58);
@@ -3056,7 +3066,7 @@ module.exports = EventPropagators;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3334,7 +3344,7 @@ module.exports = EventPluginHub;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3396,7 +3406,7 @@ SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 module.exports = SyntheticUIEvent;
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3443,16 +3453,6 @@ var ReactInstanceMap = {
 };
 
 module.exports = ReactInstanceMap;
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(16);
-
 
 /***/ }),
 /* 25 */
@@ -4012,7 +4012,7 @@ module.exports = TransactionImpl;
 
 
 
-var SyntheticUIEvent = __webpack_require__(22);
+var SyntheticUIEvent = __webpack_require__(23);
 var ViewportMetrics = __webpack_require__(65);
 
 var getEventModifierState = __webpack_require__(38);
@@ -5827,7 +5827,7 @@ module.exports = KeyEscapeUtils;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(10);
-var ReactInstanceMap = __webpack_require__(23);
+var ReactInstanceMap = __webpack_require__(24);
 var ReactInstrumentation = __webpack_require__(8);
 var ReactUpdates = __webpack_require__(11);
 
@@ -9044,7 +9044,7 @@ var ReactDOMComponentTree = __webpack_require__(5);
 var ReactDOMContainerInfo = __webpack_require__(174);
 var ReactDOMFeatureFlags = __webpack_require__(175);
 var ReactFeatureFlags = __webpack_require__(62);
-var ReactInstanceMap = __webpack_require__(23);
+var ReactInstanceMap = __webpack_require__(24);
 var ReactInstrumentation = __webpack_require__(8);
 var ReactMarkupChecksum = __webpack_require__(176);
 var ReactReconciler = __webpack_require__(18);
@@ -9597,7 +9597,7 @@ module.exports = getHostComponentFromComposite;
 /* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var React = __webpack_require__(24);
+var React = __webpack_require__(20);
 var ReactDOM = __webpack_require__(98)
 
 var Login = __webpack_require__(184)
@@ -12382,7 +12382,7 @@ module.exports = ARIADOMPropertyConfig;
 
 
 
-var EventPropagators = __webpack_require__(20);
+var EventPropagators = __webpack_require__(21);
 var ExecutionEnvironment = __webpack_require__(6);
 var FallbackCompositionState = __webpack_require__(103);
 var SyntheticCompositionEvent = __webpack_require__(104);
@@ -12946,8 +12946,8 @@ module.exports = SyntheticInputEvent;
 
 
 
-var EventPluginHub = __webpack_require__(21);
-var EventPropagators = __webpack_require__(20);
+var EventPluginHub = __webpack_require__(22);
+var EventPropagators = __webpack_require__(21);
 var ExecutionEnvironment = __webpack_require__(6);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(11);
@@ -13985,7 +13985,7 @@ module.exports = DefaultEventPluginOrder;
 
 
 
-var EventPropagators = __webpack_require__(20);
+var EventPropagators = __webpack_require__(21);
 var ReactDOMComponentTree = __webpack_require__(5);
 var SyntheticMouseEvent = __webpack_require__(29);
 
@@ -14772,7 +14772,7 @@ var DOMLazyTree = __webpack_require__(19);
 var DOMNamespaces = __webpack_require__(40);
 var DOMProperty = __webpack_require__(13);
 var DOMPropertyOperations = __webpack_require__(69);
-var EventPluginHub = __webpack_require__(21);
+var EventPluginHub = __webpack_require__(22);
 var EventPluginRegistry = __webpack_require__(27);
 var ReactBrowserEventEmitter = __webpack_require__(32);
 var ReactDOMComponentFlags = __webpack_require__(57);
@@ -16326,7 +16326,7 @@ module.exports = quoteAttributeValueForBrowser;
 
 
 
-var EventPluginHub = __webpack_require__(21);
+var EventPluginHub = __webpack_require__(22);
 
 function runEventQueueInBatch(events) {
   EventPluginHub.enqueueEvents(events);
@@ -17049,7 +17049,7 @@ module.exports = ReactDOMTextarea;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactComponentEnvironment = __webpack_require__(43);
-var ReactInstanceMap = __webpack_require__(23);
+var ReactInstanceMap = __webpack_require__(24);
 var ReactInstrumentation = __webpack_require__(8);
 
 var ReactCurrentOwner = __webpack_require__(10);
@@ -17660,7 +17660,7 @@ var React = __webpack_require__(16);
 var ReactComponentEnvironment = __webpack_require__(43);
 var ReactCurrentOwner = __webpack_require__(10);
 var ReactErrorUtils = __webpack_require__(35);
-var ReactInstanceMap = __webpack_require__(23);
+var ReactInstanceMap = __webpack_require__(24);
 var ReactInstrumentation = __webpack_require__(8);
 var ReactNodeTypes = __webpack_require__(73);
 var ReactReconciler = __webpack_require__(18);
@@ -19726,7 +19726,7 @@ module.exports = getUnboundedScrollPosition;
 
 
 var DOMProperty = __webpack_require__(13);
-var EventPluginHub = __webpack_require__(21);
+var EventPluginHub = __webpack_require__(22);
 var EventPluginUtils = __webpack_require__(34);
 var ReactComponentEnvironment = __webpack_require__(43);
 var ReactEmptyComponent = __webpack_require__(74);
@@ -20640,7 +20640,7 @@ module.exports = SVGDOMPropertyConfig;
 
 
 
-var EventPropagators = __webpack_require__(20);
+var EventPropagators = __webpack_require__(21);
 var ExecutionEnvironment = __webpack_require__(6);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInputSelection = __webpack_require__(78);
@@ -20835,7 +20835,7 @@ module.exports = SelectEventPlugin;
 var _prodInvariant = __webpack_require__(3);
 
 var EventListener = __webpack_require__(77);
-var EventPropagators = __webpack_require__(20);
+var EventPropagators = __webpack_require__(21);
 var ReactDOMComponentTree = __webpack_require__(5);
 var SyntheticAnimationEvent = __webpack_require__(165);
 var SyntheticClipboardEvent = __webpack_require__(166);
@@ -20846,7 +20846,7 @@ var SyntheticMouseEvent = __webpack_require__(29);
 var SyntheticDragEvent = __webpack_require__(170);
 var SyntheticTouchEvent = __webpack_require__(171);
 var SyntheticTransitionEvent = __webpack_require__(172);
-var SyntheticUIEvent = __webpack_require__(22);
+var SyntheticUIEvent = __webpack_require__(23);
 var SyntheticWheelEvent = __webpack_require__(173);
 
 var emptyFunction = __webpack_require__(9);
@@ -21144,7 +21144,7 @@ module.exports = SyntheticClipboardEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(22);
+var SyntheticUIEvent = __webpack_require__(23);
 
 /**
  * @interface FocusEvent
@@ -21183,7 +21183,7 @@ module.exports = SyntheticFocusEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(22);
+var SyntheticUIEvent = __webpack_require__(23);
 
 var getEventCharCode = __webpack_require__(49);
 var getEventKey = __webpack_require__(169);
@@ -21424,7 +21424,7 @@ module.exports = SyntheticDragEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(22);
+var SyntheticUIEvent = __webpack_require__(23);
 
 var getEventModifierState = __webpack_require__(38);
 
@@ -21748,7 +21748,7 @@ var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(10);
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactInstanceMap = __webpack_require__(23);
+var ReactInstanceMap = __webpack_require__(24);
 
 var getHostComponentFromComposite = __webpack_require__(81);
 var invariant = __webpack_require__(1);
@@ -22076,7 +22076,7 @@ module.exports = ReactDOMInvalidARIAHook;
 /* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var React = __webpack_require__(24);
+var React = __webpack_require__(20);
 
 var LoginPage = React.createClass({displayName: "LoginPage",
   getInitialState: function(){
@@ -22086,15 +22086,20 @@ var LoginPage = React.createClass({displayName: "LoginPage",
     this.state.display === "login" ? this.setState({display: "register"}) : this.setState({display: "login"})
   },
   register: function(){
+    var test = prompt("Please Enter Band Key to Register")
+    if(test !== "fa4ofFEFno23of32fOnon"){
+    this.setState({display: "login"});
+    }
     return(
     React.createElement("div", null, 
     React.createElement("h1", null, 
         "Registration"
         ), 
     React.createElement("form", {method: "POST", action: "/register"}, 
-      React.createElement("input", {className: "input1", placeholder: "username", name: "username"}), 
-      React.createElement("input", {className: "input1", placeholder: "password", name: "password", type: "password"}), 
-      React.createElement("input", {className: "input1", placeholder: "confirm password", name: "confirmPassword", type: "password"}), React.createElement("br", null), 
+      React.createElement("input", {className: "input1", placeholder: "Username", name: "username"}), 
+      React.createElement("input", {className: "input1", placeholder: "Password", name: "password", type: "password"}), 
+      React.createElement("input", {className: "input1", placeholder: "Confirm Password", name: "confirmPassword", type: "password"}), 
+      React.createElement("br", null), 
       React.createElement("button", {type: "submit"}, 
         "Register"
       ), 
@@ -22141,8 +22146,9 @@ module.exports = LoginPage
 /* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var React = __webpack_require__(24);
-var Schedule = __webpack_require__(186)
+var React = __webpack_require__(20);
+var Schedule = __webpack_require__(186);
+var CurrentSchedule = __webpack_require__(187)
 //Schedule Editor and About Editor Components Nested in Dashboard for Changes to site by Band Members
 
 var Dashboard = React.createClass({displayName: "Dashboard",
@@ -22153,7 +22159,25 @@ var Dashboard = React.createClass({displayName: "Dashboard",
       React.createElement("h1", null, 
         "Welcome ", userOnline
         ), 
-      React.createElement(Schedule, null)
+      React.createElement(Schedule, null), 
+          React.createElement("br", null), 
+        React.createElement("hr", null), 
+        React.createElement("br", null), 
+        React.createElement(CurrentSchedule, null), 
+        React.createElement("br", null), 
+        React.createElement("hr", null), 
+        React.createElement("br", null), 
+        React.createElement("h3", null, 
+        "Edit About Section"
+        ), 
+        React.createElement("form", {method: "POST", action: "/updateAbout"}, 
+          React.createElement("textarea", {name: "about"}, 
+            aboutVar
+          ), React.createElement("br", null), 
+          React.createElement("button", {type: "submit"}, 
+          "Update About Section"
+          )
+        )
       ))
   },
   render: function(){
@@ -22167,11 +22191,11 @@ module.exports = Dashboard;
 /* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var React = __webpack_require__(24);
+var React = __webpack_require__(20);
 
 var Schedule = React.createClass({displayName: "Schedule",
   getInitialState: function(){
-    return {inputTally: ["x"]}
+    return {inputTally: ["x"], inputs: []}
   },
   changeInputs: function(x){
     //changeInputs takes input from buttons in addEvents to add or reduce inpu tags in addEvents
@@ -22186,22 +22210,25 @@ var Schedule = React.createClass({displayName: "Schedule",
           "Add Events to Schedule" 
          ), 
          React.createElement("button", {onClick: ()=>{this.changeInputs("push")}}, 
-         "+"
+         "+ Add Event"
          ), 
          React.createElement("button", {onClick: ()=>{this.changeInputs("pull")}}, 
-         "-"
+         "- Delete Event"
          ), 
        React.createElement("form", {method: "POST", action: "/addEvents"}, 
+         React.createElement("input", {type: "hidden", name: "totalInputs", value: this.state.inputTally.length}), 
           this.state.inputTally.map((x,i)=>{
+           
            return(React.createElement("div", null, 
                "Place:", 
-               React.createElement("input", {name: "place"+i.toString()}), 
+               React.createElement("input", {ref: "place", name: "place"+i.toString()}), 
                "Date:", 
-               React.createElement("input", {name: "date"+i.toString()}), 
+               React.createElement("input", {ref: "date", name: "date"+i.toString()}), 
                "Time:", 
-               React.createElement("input", {name: "time"+i.toString()}), React.createElement("br", null)
+               React.createElement("input", {ref: "time", name: "time"+i.toString()}), React.createElement("br", null)
+          )
              )
-             )
+           
              }), React.createElement("br", null), 
          React.createElement("button", {type: "submit"}, 
          "Add Events to Schedule"
@@ -22217,6 +22244,47 @@ var Schedule = React.createClass({displayName: "Schedule",
 
 //Is sent to components/dashboard.jsx
 module.exports = Schedule
+
+/***/ }),
+/* 187 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var React = __webpack_require__(20)
+
+var CurrentScheduleList = React.createClass({displayName: "CurrentScheduleList",
+  iterator: function(){
+    return(
+    React.createElement("div", null, 
+        scheduleVar.map((x,i)=>{
+      return(
+      React.createElement("div", null, 
+          React.createElement("form", {method: "POST", action: "/deleteEvent"}, 
+      React.createElement("input", {name: "index", value: x.place, type: "hidden"}), 
+        React.createElement("h5", {className: "inline"}, x.place+" "+ x.date +" at "+ x.time+"  "), 
+            React.createElement("button", {className: "inline", type: "submit"}, 
+            "Delete"
+            ), 
+            React.createElement("br", null)
+            )
+      )
+        )
+    })
+    )
+      )
+  },
+  render: function(){
+    return(
+    React.createElement("div", null, 
+        React.createElement("h3", null, 
+        "Delete Scheduled Event"
+        ), 
+     this.iterator()
+    )
+      )
+  }
+})
+
+module.exports = CurrentScheduleList;
 
 /***/ })
 /******/ ]);

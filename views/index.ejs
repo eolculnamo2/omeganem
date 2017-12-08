@@ -46,6 +46,17 @@
         </div>
       <!-- EJS forEach function to load shows -->
       <div id = "showList">
+      <% schedule.forEach((x,i)=>{ %>
+        <h2 class ="inline">
+          <%= x.place %>
+        </h2>  
+        <h4 class ="inline">
+          <%= x.date %>
+        </h4>  
+        <h4 class ="inline">
+          <%= x.time %>
+        </h4>  <br>
+       <% }) %>
       </div>
     </center>
     </div>
@@ -68,8 +79,8 @@
           </div>
           <div class="col-md-4">
         <h4 class="aboutText">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus facilisis nisi quis tempus. Duis vehicula lacinia lacus quis pulvinar. Quisque a tortor orci. Duis venenatis facilisis orci, sit amet sodales enim porttitor at. Morbi condimentum viverra lacus, eget luctus orci finibus imperdiet. Nunc venenatis sed justo quis pellentesque. Donec felis est, fringilla vitae bibendum et, tempus a quam. Pellentesque nisi leo, egestas sit amet feugiat interdum, tempor pretium odio. Nulla sed tellus purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris purus purus, lacinia ut placerat in, maximus a tortor. Suspendisse cursus lorem vel est bibendum bibendum. Donec scelerisque auctor aliquet. Nam eget porta quam, efficitur vestibulum metus. Duis fermentum metus vitae arcu accumsan, et finibus felis euismod.
-  </h4>
+         <%= about %>
+            </h4>
     </div>
   <div class="col-md-1">
   </div>
@@ -78,9 +89,9 @@
 
   <!-- Begin Members -->
 
-  <div id = "members" class = "buffer">
+  <div id = "members" class = "buffer2">
     </div>
-    <div class = "screen">
+    <div class = "screen fixTop">
 <div id = "profiles">
     <div class = "memberProfile">
 
