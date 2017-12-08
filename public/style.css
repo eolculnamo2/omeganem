@@ -10,10 +10,8 @@ nav{
   width: 100%;
 }
 .input1{
-  width: 70%;
-  padding: 5px 10px 5px 10px;
-  border-radius: 10px;
-  outline: none;
+  padding: 10px;
+  border-radius: 5px;
 }
 textarea{
   width: 70%;
@@ -26,6 +24,11 @@ textarea{
 }
 .inline{
 display: inline;
+}
+.dashImg{
+  float: right;
+  padding: 15px;
+  width: 200px;
 }
 .buffer{
   height: 20vh;
@@ -126,8 +129,48 @@ display: inline;
   width: 100px;
   border-radius: 20px;
 }
+.mobileh2{
+  color: black;
+}
+.mobileh4{
+  color: black;
+}
 @media only screen and (max-device-width: 480px) {
-  
+
+  .memberName{
+  font-size: 50px;
+    color: white;
+  }
+  .mobileh2{
+    color: black;
+    font-size: 70px;
+  }
+  .mobileh4{
+    color: black;
+    font-size: 50px;
+  }
+  .contactButton{
+    width: 50%;
+    height: 100px;
+    font-size: 50px;
+  }
+  .input1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+   padding: 10px;
+  border-radius: 5px;
+    width: 100%;
+    font-size: 50px;
+    }
+  textarea{
+    width:100%;
+    height: 250px;
+    font-size: 50px;
+  }
+  .contactBackground{
+    min-height: 70vh;
+    margin-bottom: 20%;
+  }
   .about{
     font-size: 100px;
   }
@@ -150,7 +193,7 @@ width: 90%;
  
   }
   .screen{
-    min-height: 60vh;
+    min-height: 40vh;
   }
 nav{
   position: relative;
