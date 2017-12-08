@@ -24,6 +24,9 @@ textarea{
   height: 1px;
   background-color: black;
 }
+.inline{
+display: inline;
+}
 .buffer{
   height: 20vh;
   background-color: black;

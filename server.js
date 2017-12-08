@@ -29,22 +29,33 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use("/", users)
 
 app.get("/", (req,res)=>{
-  res.sendFile(__dirname+"/views/index.html")
+  aboutModel.findById("5a28d348734d1d69e07e8205",(err,result)=>{
+    scheduleModel.findById("5a28d331734d1d69e07e81f8",(err2,result2)=>{
+  res.render(__dirname+"/views/index.ejs",{
+    about: result.about,
+    schedule: result2.schedule
+  })
+      })
+  });
 })
 app.get("/bandLogin", (req,res)=>{
   res.render(__dirname+"/views/bandLogin.ejs",{
-  user: ""
+  user: "",
+  about: "",
+  schedule: ""
   })
 })
 
 app.get("/dashboard", (req,res)=>{
-  //Will add below findbyidandupdate to a .post according to form data
-  aboutModel.findByIdAndUpdate("5a28d348734d1d69e07e8205",{"about": "bacon"},(err,result)=>{
-    console.log(result)
-  })
+  aboutModel.findById("5a28d348734d1d69e07e8205",(err,result)=>{
+    scheduleModel.findById("5a28d331734d1d69e07e81f8",(err2,result2)=>{
   res.render(__dirname+"/views/bandLogin.ejs",{
-    user: req.user.username
-  });
+    user: req.user.username,
+    about: result.about,
+    schedule: result2.schedule
+      });
+    });
+   });
 });
 
 app.get("/logout",(req,res)=>{
@@ -52,7 +63,39 @@ app.get("/logout",(req,res)=>{
   res.redirect("/bandLogin")
 })
 
+app.post("/updateAbout", (req,res)=>{
+  aboutModel.findByIdAndUpdate("5a28d348734d1d69e07e8205",{"about": req.body.about},(err,result)=>{
+    res.redirect("/dashboard")
+  })
+});
 
+app.post("/addEvents",(req,res)=>{
+    var length = req.body.totalInputs;
+  
+  for(var i=0; i< length; i++){
+    var places = "place"+i.toString();
+    var date = "date"+i.toString();
+    var time = "time"+i.toString();
+  
+  scheduleModel.findByIdAndUpdate("5a28d331734d1d69e07e81f8",
+                                  {$push: {"schedule": {
+                                    "place": req.body[places],
+                                    "date": req.body[date],
+                                    "time": req.body[time]}}},(req,res)=>{
+    
+  })
+  }
+    
+    res.redirect("/dashboard")
+})
+
+app.post("/deleteEvent",(req,res)=>{
+  scheduleModel.findByIdAndUpdate("5a28d331734d1d69e07e81f8",{$pull:
+                                                             {"schedule": {place: req.body.index}}},(err,result)=>{
+    res.redirect("/dashboard")
+  })
+})
+                                  
 app.listen(3000,()=>{
   console.log("Server ON")
 })

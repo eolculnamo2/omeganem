@@ -17,7 +17,7 @@ router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({extended: true}));
 //Register User
 router.post('/register', function(req, res) {
-  console.log(req.body.password +"===" +req.body.confirmPassword)
+  
   if(req.body.password === req.body.confirmPassword){
     Account.register(new Account({ username : req.body.username }), req.body.password, function(err, account) {
         if (err) {
