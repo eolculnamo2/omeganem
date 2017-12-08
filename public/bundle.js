@@ -22155,10 +22155,11 @@ var Dashboard = React.createClass({displayName: "Dashboard",
   dashboard: function(){
     return(
     React.createElement("div", null, 
-        React.createElement("a", {href: "/logout"}, "Logout"), 
-      React.createElement("h1", null, 
+        React.createElement("a", {href: "/logout"}, "Logout"), React.createElement("br", null), 
+      React.createElement("h1", {className: "inline"}, 
         "Welcome ", userOnline
         ), 
+        React.createElement("img", {className: "dashImg", src: "https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/11329921_921379911217891_8472838618740884602_n.jpg?oh=0f2e28d24626f21243bdf726d45fb04e&oe=5AD51A65"}), 
       React.createElement(Schedule, null), 
           React.createElement("br", null), 
         React.createElement("hr", null), 

@@ -39,7 +39,7 @@
   <div class="screen">
     <div id = "scheduleContainer">
       <center>
-      <h1>
+      <h1 class ="about">
         Upcoming Shows
       </h1>
      <div id ="line">
@@ -47,13 +47,13 @@
       <!-- EJS forEach function to load shows -->
       <div id = "showList">
       <% schedule.forEach((x,i)=>{ %>
-        <h2 class ="inline">
+        <h2 class ="mobileh2 inline">
           <%= x.place %>
         </h2>  
-        <h4 class ="inline">
+        <h4 class ="mobileh4 inline">
           <%= x.date %>
         </h4>  
-        <h4 class ="inline">
+        <h4 class ="mobileh4 inline">
           <%= x.time %>
         </h4>  <br>
        <% }) %>
@@ -124,14 +124,14 @@
   </div>
 <div class = "screen fixTop">
   <center>
-  <h1 style = "color: white">
+  <h1 class = "about" style = "color: white">
     Contact Us
   </h1>
   <br>
   <div class = "contactBackground">
   <input class="input1" placeholder="Your Name" name ="name">
   <br><br>
-  <input class="input1" placeholder="Phone Number" name = "number">
+  <input class="input1" placeholder="Phone Number" name = "number" type = "tel">
 <br><br>
   <input class="input1" placeholder="Email Address"name ="email">
 <br><br>
@@ -142,8 +142,11 @@
     Submit
   </button>
 </div>
+    <div class= buffer>
+    </div>
 </center>
 </div>
+    
   <script src = "client.js"></script>
   </body>
 </html>

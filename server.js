@@ -95,7 +95,7 @@ app.post("/deleteEvent",(req,res)=>{
     res.redirect("/dashboard")
   })
 })
-                                  
+                                     
 app.listen(3000,()=>{
   console.log("Server ON")
 })
