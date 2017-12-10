@@ -19,8 +19,13 @@ var sched = new Schema({
 var ab = new Schema({
   about: String
 })
+
+var contact = new Schema({
+  "contact": Array
+})
 var scheduleModel = mongoose.model("once", sched,"omeganemeses")
 var aboutModel = mongoose.model("second", ab,"omeganemeses")
+var contactModel = mongoose.model("third", contact,"omeganemeses")
 //Middleware
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -52,7 +57,8 @@ app.get("/dashboard", (req,res)=>{
   res.render(__dirname+"/views/bandLogin.ejs",{
     user: req.user.username,
     about: result.about,
-    schedule: result2.schedule
+    schedule: result2.schedule,
+    messages: result2.contact
       });
     });
    });
@@ -95,6 +101,21 @@ app.post("/deleteEvent",(req,res)=>{
     res.redirect("/dashboard")
   })
 })
+
+app.post("/contactInfo", (req,res)=>{
+  
+  var cont = {
+    name: req.body.name,
+    number: req.body.number,
+    email: req.body.email,
+    details: req.body.details
+  }
+  //NOTE: This needs to become accessible to users in scroll box where messsages can be read and deleted
+  contactModel.findByIdAndUpdate("5a28d331734d1d69e07e81f8", {$push: {"contact": cont}},(err,result)=>{
+    res.send("Thank you! We will contact you soon.")
+  });
+  
+});
                                      
 app.listen(3000,()=>{
   console.log("Server ON")
