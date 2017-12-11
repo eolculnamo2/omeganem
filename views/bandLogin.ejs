@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html style = "background-color: white">
   <head>
     <meta charset="utf-8">
     <title>Omega Nemesis </title>
     <meta name="description" content="Omega Nemesis Shows, About, and Band Contact">
+    <meta name="viewport" content="content-width, initial-scale=1">
       <link id="favicon" rel="icon" href="https://scontent-dft4-3.xx.fbcdn.net/v/t1.0-1/c2.0.320.320/p320x320/11329921_921379911217891_8472838618740884602_n.jpg?oh=53ff03e0fff77da9988f0f9538407789&oe=5AC89B6F" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
@@ -12,6 +13,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
+
   <body>
 
   <div id = "app"></div>
@@ -19,7 +21,7 @@
       var userOnline = <%- JSON.stringify(user) %>;
       var aboutVar = <%- JSON.stringify(about) %>;
       var scheduleVar = <%- JSON.stringify(schedule)%>;
-      ar messagesVar = <%- JSON.stringify(messages)%>;
+      var messageVar = <%- JSON.stringify(messages)%>
     </script>
     <script type="text/javascript" src="/bundle.js"></script>
   </body>
