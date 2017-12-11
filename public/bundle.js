@@ -775,7 +775,7 @@ module.exports = ExecutionEnvironment;
 
 
 
-var _prodInvariant = __webpack_require__(17);
+var _prodInvariant = __webpack_require__(18);
 
 var ReactCurrentOwner = __webpack_require__(10);
 
@@ -1265,7 +1265,7 @@ var _prodInvariant = __webpack_require__(3),
 var CallbackQueue = __webpack_require__(61);
 var PooledClass = __webpack_require__(15);
 var ReactFeatureFlags = __webpack_require__(62);
-var ReactReconciler = __webpack_require__(18);
+var ReactReconciler = __webpack_require__(19);
 var Transaction = __webpack_require__(28);
 
 var invariant = __webpack_require__(1);
@@ -2453,6 +2453,16 @@ module.exports = PooledClass;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+module.exports = __webpack_require__(17);
+
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2585,7 +2595,7 @@ module.exports = React;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2627,7 +2637,7 @@ function reactProdInvariant(code) {
 module.exports = reactProdInvariant;
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2797,7 +2807,7 @@ module.exports = ReactReconciler;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2916,16 +2926,6 @@ DOMLazyTree.queueHTML = queueHTML;
 DOMLazyTree.queueText = queueText;
 
 module.exports = DOMLazyTree;
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(16);
-
 
 /***/ }),
 /* 21 */
@@ -5168,7 +5168,7 @@ module.exports = getEventModifierState;
 
 
 
-var DOMLazyTree = __webpack_require__(19);
+var DOMLazyTree = __webpack_require__(20);
 var Danger = __webpack_require__(118);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInstrumentation = __webpack_require__(8);
@@ -5461,7 +5461,7 @@ var _prodInvariant = __webpack_require__(3);
 var ReactPropTypesSecret = __webpack_require__(70);
 var propTypesFactory = __webpack_require__(55);
 
-var React = __webpack_require__(16);
+var React = __webpack_require__(17);
 var PropTypes = propTypesFactory(React.isValidElement);
 
 var invariant = __webpack_require__(1);
@@ -6490,7 +6490,7 @@ module.exports = getEventCharCode;
 
 
 
-var _prodInvariant = __webpack_require__(17),
+var _prodInvariant = __webpack_require__(18),
     _assign = __webpack_require__(4);
 
 var ReactNoopUpdateQueue = __webpack_require__(51);
@@ -8458,7 +8458,7 @@ module.exports = instantiateReactComponent;
 
 var _prodInvariant = __webpack_require__(3);
 
-var React = __webpack_require__(16);
+var React = __webpack_require__(17);
 
 var invariant = __webpack_require__(1);
 
@@ -9035,9 +9035,9 @@ module.exports = getActiveElement;
 
 var _prodInvariant = __webpack_require__(3);
 
-var DOMLazyTree = __webpack_require__(19);
+var DOMLazyTree = __webpack_require__(20);
 var DOMProperty = __webpack_require__(13);
-var React = __webpack_require__(16);
+var React = __webpack_require__(17);
 var ReactBrowserEventEmitter = __webpack_require__(32);
 var ReactCurrentOwner = __webpack_require__(10);
 var ReactDOMComponentTree = __webpack_require__(5);
@@ -9047,7 +9047,7 @@ var ReactFeatureFlags = __webpack_require__(62);
 var ReactInstanceMap = __webpack_require__(24);
 var ReactInstrumentation = __webpack_require__(8);
 var ReactMarkupChecksum = __webpack_require__(176);
-var ReactReconciler = __webpack_require__(18);
+var ReactReconciler = __webpack_require__(19);
 var ReactUpdateQueue = __webpack_require__(47);
 var ReactUpdates = __webpack_require__(11);
 
@@ -9597,7 +9597,7 @@ module.exports = getHostComponentFromComposite;
 /* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var React = __webpack_require__(20);
+var React = __webpack_require__(16);
 var ReactDOM = __webpack_require__(98)
 
 var Login = __webpack_require__(184)
@@ -9819,7 +9819,7 @@ module.exports = ReactChildren;
 
 
 
-var _prodInvariant = __webpack_require__(17);
+var _prodInvariant = __webpack_require__(18);
 
 var invariant = __webpack_require__(1);
 
@@ -9934,7 +9934,7 @@ module.exports = PooledClass;
 
 
 
-var _prodInvariant = __webpack_require__(17);
+var _prodInvariant = __webpack_require__(18);
 
 var ReactCurrentOwner = __webpack_require__(10);
 var REACT_ELEMENT_TYPE = __webpack_require__(52);
@@ -10349,7 +10349,7 @@ module.exports = ReactDOMFactories;
 
 
 
-var _prodInvariant = __webpack_require__(17);
+var _prodInvariant = __webpack_require__(18);
 
 var ReactPropTypeLocationNames = __webpack_require__(89);
 var ReactPropTypesSecret = __webpack_require__(90);
@@ -12048,7 +12048,7 @@ module.exports = factory;
  */
 
 
-var _prodInvariant = __webpack_require__(17);
+var _prodInvariant = __webpack_require__(18);
 
 var ReactElement = __webpack_require__(14);
 
@@ -12106,7 +12106,7 @@ module.exports = __webpack_require__(99);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactDefaultInjection = __webpack_require__(100);
 var ReactMount = __webpack_require__(80);
-var ReactReconciler = __webpack_require__(18);
+var ReactReconciler = __webpack_require__(19);
 var ReactUpdates = __webpack_require__(11);
 var ReactVersion = __webpack_require__(178);
 
@@ -14359,7 +14359,7 @@ module.exports = ReactComponentBrowserEnvironment;
 
 var _prodInvariant = __webpack_require__(3);
 
-var DOMLazyTree = __webpack_require__(19);
+var DOMLazyTree = __webpack_require__(20);
 var ExecutionEnvironment = __webpack_require__(6);
 
 var createNodesFromMarkup = __webpack_require__(119);
@@ -14768,7 +14768,7 @@ var _prodInvariant = __webpack_require__(3),
 
 var AutoFocusUtils = __webpack_require__(124);
 var CSSPropertyOperations = __webpack_require__(125);
-var DOMLazyTree = __webpack_require__(19);
+var DOMLazyTree = __webpack_require__(20);
 var DOMNamespaces = __webpack_require__(40);
 var DOMProperty = __webpack_require__(13);
 var DOMPropertyOperations = __webpack_require__(69);
@@ -16758,7 +16758,7 @@ module.exports = ReactDOMInput;
 
 var _assign = __webpack_require__(4);
 
-var React = __webpack_require__(16);
+var React = __webpack_require__(17);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactDOMSelect = __webpack_require__(71);
 
@@ -17053,7 +17053,7 @@ var ReactInstanceMap = __webpack_require__(24);
 var ReactInstrumentation = __webpack_require__(8);
 
 var ReactCurrentOwner = __webpack_require__(10);
-var ReactReconciler = __webpack_require__(18);
+var ReactReconciler = __webpack_require__(19);
 var ReactChildReconciler = __webpack_require__(139);
 
 var emptyFunction = __webpack_require__(9);
@@ -17496,7 +17496,7 @@ module.exports = ReactMultiChild;
 
 
 
-var ReactReconciler = __webpack_require__(18);
+var ReactReconciler = __webpack_require__(19);
 
 var instantiateReactComponent = __webpack_require__(72);
 var KeyEscapeUtils = __webpack_require__(46);
@@ -17656,14 +17656,14 @@ module.exports = ReactChildReconciler;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var React = __webpack_require__(16);
+var React = __webpack_require__(17);
 var ReactComponentEnvironment = __webpack_require__(43);
 var ReactCurrentOwner = __webpack_require__(10);
 var ReactErrorUtils = __webpack_require__(35);
 var ReactInstanceMap = __webpack_require__(24);
 var ReactInstrumentation = __webpack_require__(8);
 var ReactNodeTypes = __webpack_require__(73);
-var ReactReconciler = __webpack_require__(18);
+var ReactReconciler = __webpack_require__(19);
 
 if (process.env.NODE_ENV !== 'production') {
   var checkReactTypeSpec = __webpack_require__(141);
@@ -19087,7 +19087,7 @@ module.exports = ReactServerUpdateQueue;
 
 var _assign = __webpack_require__(4);
 
-var DOMLazyTree = __webpack_require__(19);
+var DOMLazyTree = __webpack_require__(20);
 var ReactDOMComponentTree = __webpack_require__(5);
 
 var ReactDOMEmptyComponent = function (instantiate) {
@@ -19292,7 +19292,7 @@ var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
 var DOMChildrenOperations = __webpack_require__(39);
-var DOMLazyTree = __webpack_require__(19);
+var DOMLazyTree = __webpack_require__(20);
 var ReactDOMComponentTree = __webpack_require__(5);
 
 var escapeTextContentForBrowser = __webpack_require__(31);
@@ -22076,7 +22076,7 @@ module.exports = ReactDOMInvalidARIAHook;
 /* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var React = __webpack_require__(20);
+var React = __webpack_require__(16);
 
 var LoginPage = React.createClass({displayName: "LoginPage",
   getInitialState: function(){
@@ -22146,9 +22146,11 @@ module.exports = LoginPage
 /* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var React = __webpack_require__(20);
+var React = __webpack_require__(16);
 var Schedule = __webpack_require__(186);
 var CurrentSchedule = __webpack_require__(187)
+var Inbox = __webpack_require__(188)
+
 //Schedule Editor and About Editor Components Nested in Dashboard for Changes to site by Band Members
 
 var Dashboard = React.createClass({displayName: "Dashboard",
@@ -22162,6 +22164,10 @@ var Dashboard = React.createClass({displayName: "Dashboard",
         React.createElement("img", {className: "dashImg", src: "https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/11329921_921379911217891_8472838618740884602_n.jpg?oh=0f2e28d24626f21243bdf726d45fb04e&oe=5AD51A65"}), 
       React.createElement(Schedule, null), 
           React.createElement("br", null), 
+        React.createElement("hr", null), 
+        React.createElement("br", null), 
+        React.createElement(Inbox, null), 
+        React.createElement("br", null), 
         React.createElement("hr", null), 
         React.createElement("br", null), 
         React.createElement(CurrentSchedule, null), 
@@ -22192,7 +22198,7 @@ module.exports = Dashboard;
 /* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var React = __webpack_require__(20);
+var React = __webpack_require__(16);
 
 var Schedule = React.createClass({displayName: "Schedule",
   getInitialState: function(){
@@ -22221,12 +22227,12 @@ var Schedule = React.createClass({displayName: "Schedule",
           this.state.inputTally.map((x,i)=>{
            
            return(React.createElement("div", null, 
-               "Place:", 
-               React.createElement("input", {ref: "place", name: "place"+i.toString()}), 
-               "Date:", 
-               React.createElement("input", {ref: "date", name: "date"+i.toString()}), 
-               "Time:", 
-               React.createElement("input", {ref: "time", name: "time"+i.toString()}), React.createElement("br", null)
+              
+               React.createElement("input", {placeholder: "place", ref: "place", name: "place"+i.toString()}), 
+               
+               React.createElement("input", {placeholder: "date", ref: "date", name: "date"+i.toString()}), 
+              
+               React.createElement("input", {placeholder: "time", ref: "time", name: "time"+i.toString()}), React.createElement("br", null)
           )
              )
            
@@ -22250,7 +22256,7 @@ module.exports = Schedule
 /* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var React = __webpack_require__(20)
+var React = __webpack_require__(16)
 
 var CurrentScheduleList = React.createClass({displayName: "CurrentScheduleList",
   iterator: function(){
@@ -22286,6 +22292,34 @@ var CurrentScheduleList = React.createClass({displayName: "CurrentScheduleList",
 })
 
 module.exports = CurrentScheduleList;
+
+/***/ }),
+/* 188 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var React = __webpack_require__(16);
+
+var Inbox = React.createClass({displayName: "Inbox",
+  render: function(){
+    return(
+      React.createElement("div", null, 
+        React.createElement("h3", null, 
+        "Inbox"
+        ), 
+        React.createElement("div", {className: "inboxBox"}, 
+        messageVar.map((x)=>{
+          return(
+          React.createElement("div", null, 
+               "Name: "+x.name+"Number: "+x.number+"Email "+x.email+"Message "+x.details
+            ))
+   })
+        )
+      )
+      )
+  }
+})
+
+module.exports = Inbox;
 
 /***/ })
 /******/ ]);

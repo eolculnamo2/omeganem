@@ -12,3 +12,4 @@ window.addEventListener('resize',()=>{
     document.getElementById("title").style.display="inline";
   }
 })
+

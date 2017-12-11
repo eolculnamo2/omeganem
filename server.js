@@ -47,20 +47,25 @@ app.get("/bandLogin", (req,res)=>{
   res.render(__dirname+"/views/bandLogin.ejs",{
   user: "",
   about: "",
-  schedule: ""
+  schedule: "",
+  messages: ""
   })
 })
 
 app.get("/dashboard", (req,res)=>{
   aboutModel.findById("5a28d348734d1d69e07e8205",(err,result)=>{
     scheduleModel.findById("5a28d331734d1d69e07e81f8",(err2,result2)=>{
+      contactModel.findById("5a28d331734d1d69e07e81f8",(err3,result3)=>{
+       
   res.render(__dirname+"/views/bandLogin.ejs",{
     user: req.user.username,
     about: result.about,
     schedule: result2.schedule,
-    messages: result2.contact
+    messages: result3.contact
       });
-    });
+        
+        });
+      });
    });
 });
 

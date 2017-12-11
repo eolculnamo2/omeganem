@@ -1,3 +1,6 @@
+html{
+  background-color: black;
+}
 body{
   background-color: black;
 }
@@ -24,6 +27,13 @@ textarea{
 }
 .inline{
 display: inline;
+}
+.homeImage{
+  height: 100vh;
+  background-image: url("https://scontent-dft4-3.xx.fbcdn.net/v/t1.0-9/11165220_904260272929855_1834719654636629803_n.jpg?oh=ee865f986774df44c4e2bae771baf6bb&oe=5AD73C91");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .dashImg{
   float: right;
@@ -100,6 +110,7 @@ display: inline;
   margin-top: -10vh;
 }
 .memberName{
+  color: #ffb575;
   display: inline-block;
   font-family: "Nosifer", cursive
 }
@@ -135,71 +146,24 @@ display: inline;
 .mobileh4{
   color: black;
 }
+.inboxBox{
+  height: 100px;
+  width: 60%;
+  border: 1px solid black;
+  overflow-y: scroll;
+}
 @media only screen and (max-device-width: 480px) {
-
-  .memberName{
-  font-size: 50px;
-    color: white;
+  .dashImg{
+  width: 25px;
   }
-  .mobileh2{
-    color: black;
-    font-size: 70px;
-  }
-  .mobileh4{
-    color: black;
-    font-size: 50px;
-  }
-  .contactButton{
-    width: 50%;
-    height: 100px;
-    font-size: 50px;
-  }
-  .input1{
-    margin-top: 5%;
-    margin-bottom: 5%;
-   padding: 10px;
-  border-radius: 5px;
-    width: 100%;
-    font-size: 50px;
-    }
-  textarea{
-    width:100%;
-    height: 250px;
-    font-size: 50px;
-  }
-  .contactBackground{
-    min-height: 70vh;
-    margin-bottom: 20%;
-  }
-  .about{
-    font-size: 100px;
-  }
-  .aboutText{
-    font-size: 40px;
-  }
-  .clownPhoto{
-width: 90%;
-    min-height: 40vh;
-    margin:auto;
-   
+  .title{
+    display: none;
   }
   .navOptions{
-    font-size: 35px;
+    font-size: 14px;
+    }
+  .clownPhoto{
+    width: 50%;
+    margin-left: 20%;
   }
-  .memberImage{
-    width: 70vw;
-    max-width:90vw;
-    max-height: 70vh;
- 
-  }
-  .screen{
-    min-height: 40vh;
-  }
-nav{
-  position: relative;
-}
-.title{
-  display: none;
-}
-
 }

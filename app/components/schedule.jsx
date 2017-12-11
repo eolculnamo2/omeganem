@@ -27,12 +27,12 @@ var Schedule = React.createClass({
           {this.state.inputTally.map((x,i)=>{
            
            return(<div>
-               Place:
-               <input ref = "place" name = {"place"+i.toString()}/>
-               Date:
-               <input ref = "date" name = {"date"+i.toString()}/>
-               Time:
-               <input ref = "time" name = {"time"+i.toString()}/><br/>
+              
+               <input placeholder="place" ref = "place" name = {"place"+i.toString()}/>
+               
+               <input placeholder="date" ref = "date" name = {"date"+i.toString()}/>
+              
+               <input placeholder="time" ref = "time" name = {"time"+i.toString()}/><br/>
           </div>
              )
            
